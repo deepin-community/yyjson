@@ -1,3 +1,9 @@
+yyjson (0.8.0-0deepin) unstable; urgency=medium
+
+  * modify changelog and format
+
+ -- zhangkun <zhangkun2@uniontech.com>  Thu, 23 Nov 2023 22:26:45 +0800
+
 yyjson (0.8.0) UNRELEASED; urgency=medium
 
   * New upstream version
