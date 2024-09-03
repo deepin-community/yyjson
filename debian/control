@@ -11,15 +11,31 @@ Build-Depends: debhelper-compat (= 13),
                 cmake,
 Homepage: https://github.com/ibireme/yyjson
 
-Package: yyjson-dev
+Package: libyyjson-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends: yyjson (= ${binary:Version}), ${misc:Depends}
-Description: A high performance JSON library written in ANSI C.
+Description: high performance JSON library written in ANSI C (development files)
 
-Package: yyjson
+Package: libyyjson0
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: A high performance JSON library written in ANSI C.
+Description: high performance JSON library written in ANSI C
+
+Package: yyjson-dev
+Section: oldlibs
+Architecture: any
+Multi-Arch: same
+Depends: libyyjson-dev, ${misc:Depends}
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: yyjson
+Section: oldlibs
+Architecture: any
+Multi-Arch: same
+Depends: libyyjson0, ${misc:Depends}
+Description: transitional package
+ This is a transitional package. It can safely be removed.
