@@ -1,3 +1,21 @@
+yyjson (0.10.0-0deepin) unstable; urgency=medium
+
+  * New upstream version
+  * Add `yyjson_locate_pos()` function to locate the line and column number for error position: #166
+  * Improve error messages for JSON reader: #168
+  * Fix `YYJSON_READ_NUMBER_AS_RAW` not overriding `YYJSON_READ_BIGNUM_AS_RAW` as per documentation: #170
+
+ -- Amaro Martínez <xoas@airmail.cc>  Mon, 02 Sep 2024 10:53:50 -0500
+
+yyjson (0.9.0) UNRELEASED; urgency=medium
+
+  * New upstream version
+  * Add `YYJSON_WRITE_NEWLINE_AT_END` flag for JSON writer: #147
+  * Add auto-type conversion (uint<->sint) to `yyjson_ptr_get_uint/sint()`: #152
+  * Fix incorrect output in environments lacking native `bool` type support: #161
+
+ -- Amaro Martínez <xoas@airmail.cc>  Mon, 02 Sep 2024 10:53:50 -0500
+
 yyjson (0.8.0-0deepin) unstable; urgency=medium
 
   * modify changelog and format
