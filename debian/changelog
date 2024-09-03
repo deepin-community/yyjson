@@ -1,4 +1,4 @@
-yyjson (0.10.0-0deepin) unstable; urgency=medium
+yyjson (0.10.0-0deepin1) unstable; urgency=medium
 
   * New upstream version
   * Add `yyjson_locate_pos()` function to locate the line and column number for error position: #166
