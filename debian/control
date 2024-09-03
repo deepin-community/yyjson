@@ -1,24 +1,43 @@
 Source: yyjson
+Section: libs
 Priority: optional
 Maintainer: unknown <xiangzelong@deepin.org>
+Uploaders: Amaro Martínez <xoas@airmail.cc>,
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
 Build-Depends: debhelper-compat (= 13),
                 libmpfr-dev,
                 libgmp-dev,
                 cmake,
-Standards-Version: 4.6.0
-Section: libs
 Homepage: https://github.com/ibireme/yyjson
-Rules-Requires-Root: no
 
-Package: yyjson-dev
+Package: libyyjson-dev
 Section: libdevel
 Architecture: any
 Multi-Arch: same
-Depends: yyjson (= ${binary:Version}), ${misc:Depends}
-Description: A high performance JSON library written in ANSI C.
+Depends: libyyjson0 (= ${binary:Version}), ${misc:Depends}
+Description: high performance JSON library written in ANSI C (development files)
+ The fastest JSON library in C.
 
-Package: yyjson
+Package: libyyjson0
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: A high performance JSON library written in ANSI C.
+Description: high performance JSON library written in ANSI C
+ The fastest JSON library in C.
+
+Package: yyjson-dev
+Section: oldlibs
+Architecture: any
+Multi-Arch: same
+Depends: libyyjson-dev, ${misc:Depends}
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: yyjson
+Section: oldlibs
+Architecture: any
+Multi-Arch: same
+Depends: libyyjson0 (= ${binary:Version}), ${misc:Depends}
+Description: transitional package
+ This is a transitional package. It can safely be removed.

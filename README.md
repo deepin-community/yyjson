@@ -213,26 +213,31 @@ A non-exhaustive list of projects that expose yyjson to other languages or
 use yyjson internally for a major feature. If you have a project that uses
 yyjson, feel free to open a PR to add it to this list.
 
-| Project        | Language | Description                                                  |
-|----------------|----------|--------------------------------------------------------------|
-| [py_yyjson][]  | Python   | Python bindings for yyjson                                   |
-| [orjson][]     | Python   | JSON library for Python with an optional yyjson backend      |
-| [cpp-yyjson][] | C++      | C++ JSON library with a yyjson backend                       |
-| [yyjsonr][]    | R        | R binding for yyjson                                         |
-| [Anada][]      | Swift    | JSON model decoding based on yyjson                          |
-| [duckdb][]     | C++      | DuckDB is an in-process SQL OLAP Database Management System  |
+| Project         | Language | Description                                                                              |
+|-----------------|----------|------------------------------------------------------------------------------------------|
+| [py_yyjson][]   | Python   | Python bindings for yyjson                                                               |
+| [orjson][]      | Python   | JSON library for Python with an optional yyjson backend                                  |
+| [cpp-yyjson][]  | C++      | C++ JSON library with a yyjson backend                                                   |
+| [reflect-cpp][] | C++      | C++ library for serialization through automated field name retrieval from structs        |
+| [yyjsonr][]     | R        | R binding for yyjson                                                                     |
+| [Ananda][]      | Swift    | JSON model decoding based on yyjson                                                      |
+| [duckdb][]      | C++      | DuckDB is an in-process SQL OLAP Database Management System                              |
+| [fastfetch][]   | C        | A neofetch-like tool for fetching system information and displaying them in a pretty way |
+| [Zrythm][]      | C        | Digital Audio Workstation that uses yyjson to serialize JSON project files               |
+| [bemorehuman][] | C        | Recommendation engine with a focus on uniqueness of the person receiving the rec         |
 
 
-# TODO
+# TODO for v1.0
 * [x] Add documentation page.
 * [x] Add GitHub workflow for CI and codecov.
-* [x] Add more tests: valgrind, sanitizer.
-* [x] Support JSON Pointer to query value from document.
-* [x] Add fuzzer.
+* [x] Add more tests: valgrind, sanitizer, fuzzing.
+* [x] Support JSON Pointer to query and modify JSON.
 * [x] Add `RAW` type for JSON reader and writer.
-* [ ] Add streaming API for JSON reader and writer.
-* [ ] Add documentation about performance.
-* [ ] Optimize performance for 32-bit processor.
+* [ ] Add option to limit real number output precision.
+* [ ] Add option to support JSON5 (if feasible).
+* [ ] Add functions to diff two JSON documents.
+* [ ] Add documentation on performance optimizations.
+* [ ] Ensure ABI stability.
 
 # License
 This project is released under the MIT license.
@@ -241,6 +246,10 @@ This project is released under the MIT license.
 [py_yyjson]: https://github.com/tktech/py_yyjson
 [orjson]: https://github.com/ijl/orjson
 [cpp-yyjson]: https://github.com/yosh-matsuda/cpp-yyjson
+[reflect-cpp]: https://github.com/getml/reflect-cpp
 [yyjsonr]: https://github.com/coolbutuseless/yyjsonr
-[Anada]: https://github.com/nixzhu/Ananda
+[Ananda]: https://github.com/nixzhu/Ananda
 [duckdb]: https://github.com/duckdb/duckdb
+[fastfetch]: https://github.com/fastfetch-cli/fastfetch
+[Zrythm]: https://github.com/zrythm/zrythm
+[bemorehuman]: https://github.com/BeMoreHumanOrg/bemorehuman

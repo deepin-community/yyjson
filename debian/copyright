@@ -1,7 +1,7 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
-Upstream-Name: yyjson
-Upstream-Contact: https://github.com/ibireme/yyjson
 Source: https://github.com/ibireme/yyjson
+Upstream-Name: yyjson
+Upstream-Contact: https://github.com/ibireme/yyjson/issues/new
 
 Files: *
 Copyright: Copyright (c) 2020 YaoYuan <ibireme@gmail.com>
