@@ -16,6 +16,8 @@ Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends: libyyjson0 (= ${binary:Version}), ${misc:Depends}
+Breaks: yyjson-dev (<< 0.10.0-0deepin1)
+Replaces: yyjson-dev (<< 0.10.0-0deepin1)
 Description: high performance JSON library written in ANSI C (development files)
  The fastest JSON library in C.
 
@@ -23,6 +25,8 @@ Package: libyyjson0
 Architecture: any
 Multi-Arch: same
 Depends: ${shlibs:Depends}, ${misc:Depends}
+Breaks: yyjson (<< 0.10.0-0deepin1)
+Replaces: yyjson (<< 0.10.0-0deepin1)
 Description: high performance JSON library written in ANSI C
  The fastest JSON library in C.
 
